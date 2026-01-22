@@ -1,0 +1,254 @@
+ /* Custom Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1d1d1f;
+        }
+        
+        /* Navbar */
+        .navbar-brand {
+            font-size: 21px;
+            font-weight: 600;
+        }
+        
+        /* .apple-navbar {
+            background-color: #f5f5f7;
+            border-bottom: 1px solid #d2d2d7;
+        } */
+        
+        .apple-navbar .nav-link {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            padding: 0 10px;
+        }
+    
+    
+        
+        .apple-navbar .nav-link:hover {
+            color: #0066cc;
+        }
+        
+       
+
+        /* prod item */
+
+/* ===== Product Nav Wrapper ===== */
+.prodnav {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+/* ===== UL Reset + Flex ===== */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ===== LI ===== */
+.item-list li {
+  flex-shrink: 0;
+}
+
+/* ===== Item Box ===== */
+.item-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ===== Image ===== */
+.item-img img {
+    width: 70px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 6px;
+}
+.item-img small {font-size: 10px;}
+
+/* ===== Text ===== */
+.item-img span {
+  font-size: 13px;
+  color: #111;
+  white-space: nowrap;
+}
+
+/* ===== Hover Effect ===== */
+.item-img:hover span {
+  color: #0071e3;
+}
+
+/* ================================================= */
+/* =================== MOBILE VIEW ================= */
+/* ================================================= */
+@media (max-width: 767px) {
+
+  .item-list {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .item-list::-webkit-scrollbar {
+    display: none; /* Chrome */
+  }
+
+  .item-img img {
+    width: 32px;
+  }
+
+  .item-img span {
+    font-size: 12px;
+  }
+}
+
+/* ================================================= */
+/* =================== TABLET VIEW ================= */
+/* ================================================= */
+@media (min-width: 768px) and (max-width: 991px) {
+  .item-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+        
+      
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            
+            .hero-title {
+                font-size: 40px;
+            }
+            
+            .hero-subtitle {
+                font-size: 22px;
+            }
+            
+            .apple-navbar .nav-link {
+                font-size: 11px;
+                padding: 0 8px;
+            }
+            
+            .product-name {
+                font-size: 18px;
+            }
+            
+            .promo-title {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 32px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .mac-category-nav .nav-link {
+                font-size: 11px;
+                padding: 6px 8px;
+            }
+        }
+
+
+
+        /* main-hero */
+
+
+.main-hero {padding: 50px 0px;}
+        .main-hero .title-heading h1{font-size: 70px; font-weight: 600; line-height: 44px;}
+
+        .main-hero .prodbox {background: #f5f5f5; border-radius: 15px;  padding:20px; margin-top:50px;}
+
+
+        .bluebox {
+  position: fixed;
+  z-index: 99;
+  background-color: #0071e3;
+  color: #fff;
+
+  width: 420px;
+  height: auto;
+  padding: 20px;
+
+  border-radius: 10px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* âœ… perfect center */
+}
+
+
+
+.modal-footer-custom {
+  display: flex;
+  justify-content: flex-end; /* âœ… right side */
+  gap: 12px;
+}
+
+/* Common button style */
+.btn-modal {
+  background: transparent;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  padding: 6px 18px;
+
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect */
+.btn-modal:hover {
+  background: #ffffff;
+  color: #0071e3;
+}
+
+
+
+.tooltip1 {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  z-index: 9999 !important; /* ðŸ”¥ sabke upar */
+
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #646464;
+
+  width: max-content;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.modal-backdrop {
+  z-index: 1050 !important;
+}
+
+.tooltip1::after { content: ""; position: absolute; bottom: -12px; /* arrow outside */ left: 40px; /* arrow position */ width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 12px solid #ffffff; /* down arrow */  }
